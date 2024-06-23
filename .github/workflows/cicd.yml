@@ -13,7 +13,7 @@ jobs:
       - name: Login to docker hub
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}     
       - name: Build Docker Image
-        run: docker build -t akshitmittal20/coffee_shop_img_backend
+        run: docker build -t akshitmittal20/coffee_shop_img_backend .
       - name: Publish Image to docker hub
         run: docker push akshitmittal20/coffee_shop_img_backend:latest
  
