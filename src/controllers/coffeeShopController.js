@@ -6,6 +6,7 @@ exports.getAllCoffeeShops = async (req, res, next) => {
     const coffeeShops = await CoffeeShop.find();
     res.json(coffeeShops);
   } catch (err) {
+    console.log("error occured passed to next function")
     next(err);
   }
 };
@@ -17,6 +18,7 @@ exports.getCoffeeShopById = async (req, res, next) => {
     if (!coffeeShop) return res.status(404).json({ message: 'Coffee shop not found' });
     res.json(coffeeShop);
   } catch (err) {
+    console.log("error occured passed to next function")
     next(err);
   }
 };
@@ -33,6 +35,7 @@ exports.createCoffeeShop = async (req, res, next) => {
     const newCoffeeShop = await coffeeShop.save();
     res.status(201).json(newCoffeeShop);
   } catch (err) {
+    console.log("error occured passed to next function")
     next(err);
   }
 };
@@ -44,6 +47,7 @@ exports.updateCoffeeShop = async (req, res, next) => {
     if (!updatedCoffeeShop) return res.status(404).json({ message: 'Coffee shop not found' });
     res.json(updatedCoffeeShop);
   } catch (err) {
+    console.log("error occured passed to next function")
     next(err);
   }
 };
