@@ -1,7 +1,13 @@
 const express = require('express');
 const connectDB = require('./config/db');
 const coffeeShopRoutes = require('./routes/coffeeShopRoutes');
-const cors = require('cors'); // Add this line
+const cors = require('cors'); 
+const dotenv = require('dotenv');
+
+const errorHandler = require('./middleware/errorHandler');
+
+
+dotenv.config();
 
 
 const app = express();
@@ -17,6 +23,9 @@ app.use(cors()); // Add this line
 
 // Routes
 app.use('/api', coffeeShopRoutes);
+
+// Error Handler Middleware
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
