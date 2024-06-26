@@ -1,3 +1,6 @@
+<img width="1280" alt="Screenshot 2024-06-26 at 3 25 50 PM" src="https://github.com/akshitmittal20/coffee_shop-backend/assets/63283989/1a4f701e-dcf8-4007-ad9f-90e2ccaa6089">
+<img width="1280" alt="Screenshot 2024-06-26 at 3 26 25 PM" src="https://github.com/akshitmittal20/coffee_shop-backend/assets/63283989/6bad4994-dff3-47df-aa0a-ef8668a84b30">
+
 # Coffee Shop Finder App
 
 ## Overview
@@ -82,6 +85,7 @@ For any questions or feedback, please contact: akshitmittal20@gmail.com
 1. **Build Docker Images**:
    - Set up GitHub Actions to build Docker images for both frontend and backend repositories.
    - Push these images to DockerHub repositories.
+<img width="1280" alt="Screenshot 2024-06-26 at 3 25 50 PM" src="https://github.com/akshitmittal20/coffee_shop-backend/assets/63283989/8f450018-d43b-4086-9745-650dac6a8a0b">
 
 ### AWS Deployment
 
