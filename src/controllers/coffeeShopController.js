@@ -3,6 +3,7 @@ const CoffeeShop = require('../models/CoffeeShop');
 // Get all coffee shops
 exports.getAllCoffeeShops = async (req, res, next) => {
   try {
+    console.log("passed to get all coffeeshops function")
     const coffeeShops = await CoffeeShop.find();
     res.json(coffeeShops);
   } catch (err) {
