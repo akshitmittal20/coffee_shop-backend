@@ -28,4 +28,4 @@ jobs:
       - name: Delete old container
         run: docker rm -f coffee_shop_backend_container || true
       - name: Run Docker Container
-        run: docker run -d -p 5000:5000 --name coffee_shop_backend_container -e MONGO_PASSWORD='${{ secrets.MONGO_PASSWORD }}' akshitmittal20/coffee_shop_img_backend:latest
+        run: docker run -d -p 5555:5555 --name coffee_shop_backend_container -e MONGO_PASSWORD='${{ secrets.MONGO_PASSWORD }}' akshitmittal20/coffee_shop_img_backend:latest

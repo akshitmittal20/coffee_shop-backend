@@ -41,7 +41,7 @@ The assignment tasks include:
    npm install
    
    # Set up environment variables (create a .env file if necessary)
-   PORT=5000
+   PORT=5555
    DB_URI=mongodb+srv://<username>:<password>@<cluster>/<database>
    
    # Start the server
@@ -63,7 +63,7 @@ To deploy this application on AWS:
 
 ## Access URLs
 
-- **Backend API**: [http://44.202.166.106:5000/](http://44.202.166.106:5000/)
+- **Backend API**: [http://44.202.166.106:5555/](http://44.202.166.106:5555/)
 - **Frontend Application**: [http://44.202.166.106:5173/](http://44.202.166.106:5173/)
 
 ## Bonus (Advanced Search Capabilities)
